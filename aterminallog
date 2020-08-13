@@ -1,0 +1,1174 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> cd server
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (server)
+version: (1.0.0)
+description: A amazon Clone app
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords: Prabhakar singh
+author: Prabhakar Singh
+license: (ISC)
+About to write to C:\Users\pksin\Desktop\amazonOMSircloneProject\server\package.json:
+
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A amazon Clone app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Prabhakar",
+    "singh"
+  ],
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> npm install express mongan body-parser --save
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/mongan - Not found
+npm ERR! 404
+npm ERR! 404
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\pksin\AppData\Roaming\npm-cache\_logs\2019-12-28T16_31_43_174Z-debug.log
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> npm install express morgan body-parser --save
+npm WARN server@1.0.0 No repository field.
+
++ morgan@1.9.1
++ body-parser@1.19.0
+added 53 packages from 37 contributors and audited 167 packages in 6.557s
+found 0 vulnerabilities
+
+                                                          node server.js
+Listening on PORT 3000
+GET / 200 10.255 ms - 20
+GET /favicon.ico 404 0.289 ms - 150
+GET / 200 1.175 ms - 20
+POST / 404 1.352 ms - 140
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+undefined
+POST / - - ms - -
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+Listening on PORT 3000
+undefined
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+undefined
+POST / - - ms - -
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+Listening on PORT 3000
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+Listening on PORT 3000
+pk
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> node server.js
+Listening on PORT 3000
+pk
+pk
+pk
+POST / - - ms - -
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> cd ..
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git init
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git add -A
+warning: LF will be replaced by CRLF in server/package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in server/package.json.
+The file will have its original line endings in your working directory
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git status
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   server/package-lock.json
+        new file:   server/package.json
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git commit -m "Initial commit write POST and GET API"
+[master (root-commit) ec895c3] Initial commit write POST and GET API
+ 4 files changed, 448 insertions(+)
+ create mode 100644 server/.gitignore
+ create mode 100644 server/package-lock.json
+ create mode 100644 server/package.json
+ create mode 100644 server/server.js
+commit ec895c3bbdb46aaf0b1fb9eeadb1dac7e274f444 (HEAD -> master)
+Date:   Sat Dec 28 22:53:04 2019 +0530
+
+    Initial commit write POST and GET API
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git checkout 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   server/server.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git checkout
+M       server/server.js
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   server/server.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject> git checkout server/server.js
+Updated 1 path from the index
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject>
+
+
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:19028) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:27496) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:25660) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:5336) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28312) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:16528) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+(node:1684) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28220) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:18568) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:21608) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:2068) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28596) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28476) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:26000) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:9868) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:12804) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:27092) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:7104) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+(node:6304) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:8988) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28044) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:8256) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:15472) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:27364) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:24156) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:12300) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28640) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:22932) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28388) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28168) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:20020) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:6648) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:10120) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:19796) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:8976) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:20188) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:24060) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:28156) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:27788) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:10284) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:13556) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:23268) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:11556) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:7216) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:11456) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Listening on PORT 3000
+(node:11456) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:22016) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:5760) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:19940) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:27972) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:6744) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:22576) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:3348) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:11960) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:14092) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:10544) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:13920) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:25276) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:8476) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:16444) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:59
+app.listen(3000,err=>{
+^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const pro
+      ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const product
+      ^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRotes
+      ^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes
+      ^^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+(node:27852) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required()
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./")
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/")
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product")
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:20680) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+rs
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58
+const productRoutes= required("./routes/product");
+                     ^
+
+ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:58:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:9404) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+(node:19664) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+rs
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> nodemon server
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+POST /api/products - - ms - -
+GET /api/products 404 8.923 ms - 151
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\routes\product.js:26
+        }))
+          ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:60:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\pksin\Desktop\amazonOMSircloneProject\server\routes\product.js:26
+        }))
+          ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\pksin\Desktop\amazonOMSircloneProject\server\server.js:60:22)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> nodemon server
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> nodemon server
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+POST /api/products - - ms - -
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> nodemon server
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+POST /api/products - - ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on PORT 3000
+Connected to the AmazonOM database
+rs
+Listening on PORT 3000
+Connected to the AmazonOM database
+POST /api/products?title=RC%20Car&description=A%20remote%20controller%20toy%20car&photo=A%20RC%20Car%20photo&stockQuantity=100 200 335.409 ms - 46
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> npm install aws-sdk multer multer-s3 --save
+npm WARN server@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+Listening on PORT 3000
+Connected to the AmazonOM database
+POST /api/products?title=RC%20Car&description=A%20remote%20controller%20toy%20car&photo=A%20RC%20Car%20photo&stockQuantity=100 200 335.409 ms - 46
+^CTerminate batch job (Y/N)? y
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server> npm install aws-sdk multer multer-s3 --save
+npm WARN server@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ multer@1.4.2
++ aws-sdk@2.596.0
++ multer-s3@2.9.0
+added 39 packages from 79 contributors and audited 395 packages in 6.601s
+found 0 vulnerabilities
+
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++ multer@1.4.2
++ aws-sdk@2.596.0
++ multer-s3@2.9.0
+added 39 packages from 79 contributors and audited 395 packages in 6.601s
+found 0 vulnerabilities
+
+PS C:\Users\pksin\Desktop\amazonOMSircloneProject\server>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
